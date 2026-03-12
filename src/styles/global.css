@@ -1,11 +1,11 @@
 /* ============================================
-   UINUX Blog — Global Styles
+   Misrule — Global Styles
    A calm, typography-first design system.
    ============================================ */
 
 :root {
-  --font-body: "Newsreader", Georgia, "Times New Roman", serif;
-  --font-heading: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-body: system-ui, "Lexend Deca", "Newsreader", Georgia, "Times New Roman", serif;
+  --font-heading: system-ui, "Lexend Deca", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", Consolas, monospace;
 
   --color-text: #1a1a1a;

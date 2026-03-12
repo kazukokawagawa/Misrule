@@ -3,20 +3,20 @@ import Layout from "../components/Layout.astro";
 import Heading from "../components/Heading.astro";
 ---
 
-<Layout title="Search — UINUX Blog" description="Search posts on UINUX Blog.">
+<Layout title="Search — Misrule" description="Search posts on Misrule.">
   <section class="search-page">
-    <Heading as="h1">Search</Heading>
+    <Heading as="h1">搜索</Heading>
     <div class="search-input-wrap">
       <input
         type="text"
         id="search-input"
-        placeholder="Search posts..."
+        placeholder="想要搜索什么？"
         autocomplete="off"
         autofocus
       />
     </div>
     <ul id="search-results" class="search-results"></ul>
-    <p id="search-empty" class="search-empty" hidden>No posts found.</p>
+    <p id="search-empty" class="search-empty" hidden>没有找到相关的文章。</p>
   </section>
 </Layout>
 
