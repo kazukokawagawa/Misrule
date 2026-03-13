@@ -2,9 +2,11 @@ import type { APIContext } from "astro";
 import { getCollection } from "astro:content";
 
 export async function GET(context: APIContext) {
-  const posts = (await getCollection("posts")).sort(
-    (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
-  );
+  const posts = (await getCollection("posts")).sort((a, b) => {
+    const dateDiff = b.data.date.valueOf() - a.data.date.valueOf();
+    if (dateDiff !== 0) return dateDiff;
+    return b.data.priority - a.data.priority;
+  });
 
   const index = posts.map((post) => ({
     slug: post.id,

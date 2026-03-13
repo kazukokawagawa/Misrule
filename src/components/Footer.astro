@@ -3,7 +3,7 @@ const year = new Date().getFullYear();
 ---
 
 <footer class="footer">
-  <p>&copy; {year} Misrule. All rights reserved.</p>
+  <p>&copy; {year} Misrule. All rights reserved. | <a href="http://www.wtfpl.net/" target="_blank" rel="noopener noreferrer">WTFPL</a></p>
 </footer>
 
 <style>
@@ -17,5 +17,15 @@ const year = new Date().getFullYear();
     font-family: var(--font-heading);
     font-size: 0.75rem;
     color: var(--color-text-tertiary);
+  }
+
+  .footer a {
+    color: var(--color-text-tertiary);
+    text-decoration: underline;
+    transition: color 0.2s ease;
+  }
+
+  .footer a:hover {
+    color: var(--color-text);
   }
 </style>
